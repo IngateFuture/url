@@ -1,14 +1,14 @@
 Gem::Specification.new do |gem|
-  gem.name          = 'url'
-  gem.version       = '0.0.1'
-  gem.date          = '2016-09-30'
-  gem.summary       = 'URL'
-  gem.description   = 'A simple ruby url parsing library'
-  gem.authors       = ['https://github.com/morr', 'https://github.com/Sfolt']
-  gem.email         = 'takandar@gmail.com'
-  gem.files         = `git ls-files`.split($\)
+  gem.name = 'url'
+  gem.version = '0.0.1'
+  gem.date = '2016-09-30'
+  gem.summary = 'URL'
+  gem.description = 'A simple ruby url parsing library'
+  gem.authors = ['https://github.com/morr', 'https://github.com/Sfolt']
+  gem.email = 'takandar@gmail.com'
+  gem.files = `git ls-files`.split($\)
   gem.require_paths = ['lib']
-  gem.license       = 'MIT'
+  gem.license = 'MIT'
   # gem.homepage    = 'http://rubygems.org/gems/url'
 
   gem.required_ruby_version = '>= 1.9.3'
