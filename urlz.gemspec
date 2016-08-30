@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.description = 'A simple ruby url parsing library'
   gem.authors = ['https://github.com/morr', 'https://github.com/Sfolt']
   gem.email = 'takandar@gmail.com'
-  gem.files = `git ls-files`.split($\)
+  gem.files = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR )
   gem.require_paths = ['lib']
   gem.license = 'MIT'
   # gem.homepage    = 'http://rubygems.org/gems/url'
