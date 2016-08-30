@@ -1,1 +1,2 @@
 # Simple ruby URL parsing library
+[ ![Codeship Status for IngateFuture/urlz](https://codeship.com/projects/67b8c2d0-50e9-0134-5875-4efbbc592ce7/status?branch=master)](https://codeship.com/projects/171113)
