@@ -1,6 +1,6 @@
-describe Url do
+describe Urlz do
   let(:string) { 'lenta.ru' }
-  let(:url) { Url.new string }
+  let(:url) { Urlz.new string }
 
   describe '#assign' do
     subject { url.assign(hash).to_s }

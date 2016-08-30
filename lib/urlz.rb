@@ -2,7 +2,7 @@ require 'English'
 require 'simpleidn'
 require 'rack'
 
-class Url
+class Urlz
   REGEXP = %r{
     \A
     (?<protocol>https?://)
