@@ -81,7 +81,7 @@ class Urlz
 private
 
   def chain string
-    Url.new string
+    Urlz.new string
   end
 
   def current_params

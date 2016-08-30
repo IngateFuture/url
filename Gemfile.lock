@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    url (0.0.1)
+    urlz (0.0.1)
       rack
       simpleidn
 
@@ -109,7 +109,7 @@ DEPENDENCIES
   rb-fchange
   rb-fsevent
   rb-inotify
-  url!
+  urlz!
 
 BUNDLED WITH
    1.12.5
