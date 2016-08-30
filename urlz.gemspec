@@ -1,8 +1,8 @@
 Gem::Specification.new do |gem|
-  gem.name = 'url'
+  gem.name = 'urlz'
   gem.version = '0.0.1'
   gem.date = '2016-09-30'
-  gem.summary = 'URL'
+  gem.summary = 'Urlz'
   gem.description = 'A simple ruby url parsing library'
   gem.authors = ['https://github.com/morr', 'https://github.com/Sfolt']
   gem.email = 'takandar@gmail.com'
