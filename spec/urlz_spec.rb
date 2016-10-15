@@ -62,15 +62,34 @@ describe Urlz do
     end
   end
 
+  describe 'without_protocol' do
+    subject { url.without_protocol.to_s }
+
+    context 'has_http' do
+      let(:string) { 'http://test.org' }
+      it { is_expected.to eq '//test.org' }
+    end
+
+    context 'no_http' do
+      let(:string) { 'test.org' }
+      it { is_expected.to eq '//test.org' }
+    end
+  end
+
   describe '#with_http' do
     subject { url.with_http.to_s }
 
-    context 'has_http' do
+    context 'has http' do
       let(:string) { 'http://test.org' }
       it { is_expected.to eq 'http://test.org' }
     end
 
-    context 'no_http' do
+    context 'no protocol' do
+      let(:string) { '//test.org' }
+      it { is_expected.to eq 'http://test.org' }
+    end
+
+    context 'no http' do
       let(:string) { 'test.org' }
       it { is_expected.to eq 'http://test.org' }
     end
@@ -79,18 +98,23 @@ describe Urlz do
   describe 'without_http' do
     subject { url.without_http.to_s }
 
-    context 'has_http' do
+    context 'has http' do
       let(:string) { 'http://test.org' }
       it { is_expected.to eq 'test.org' }
     end
 
-    context 'no_http' do
+    context 'no protocol' do
+      let(:string) { '//test.org' }
+      it { is_expected.to eq 'test.org' }
+    end
+
+    context 'no http' do
       let(:string) { 'test.org' }
       it { is_expected.to eq 'test.org' }
     end
   end
 
-  describe '#extract_domain' do
+  describe '#domain' do
     subject { url.domain.to_s }
 
     context 'with www' do

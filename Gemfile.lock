@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    urlz (0.0.1)
+    urlz (0.0.2)
       rack
       simpleidn
 
@@ -112,4 +112,4 @@ DEPENDENCIES
   urlz!
 
 BUNDLED WITH
-   1.12.5
+   1.13.2

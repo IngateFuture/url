@@ -39,6 +39,10 @@ class Urlz
     current_params[param.to_s]
   end
 
+  def without_protocol
+    chain '//' + without_http.to_s
+  end
+
   def with_protocol
     if protocol? @url
       self
@@ -48,7 +52,7 @@ class Urlz
   end
 
   def with_http
-    chain @url.sub(%r{\A(?!https?://)}, 'http://')
+    chain @url.gsub(%r{\A// | \A(?!https?://)}mix, 'http://')
   end
 
   def without_http

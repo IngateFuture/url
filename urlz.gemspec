@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'urlz'
-  gem.version = '0.0.1'
+  gem.version = '0.0.2'
   gem.date = '2016-09-30'
   gem.summary = 'Urlz'
   gem.description = 'A simple ruby url parsing library'
