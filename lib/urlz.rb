@@ -89,7 +89,7 @@ private
   end
 
   def current_params
-    @current_params ||= Rack::Utils.parse_query(URI(@url).query)
+    @current_params ||= Rack::Utils.parse_query(URI(@url.gsub('|', '%7C')).query)
   end
 
   def protocol? string

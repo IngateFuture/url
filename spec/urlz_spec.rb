@@ -7,6 +7,12 @@ describe Urlz do
 
     let(:hash) { { p1: 'p1', 'p2' => 'p2' } }
 
+    context 'strange link' do
+      let(:string) { 'http://www.mtrck.net/offer/63430|5272?data1=2494&data2=26092&data3=' }
+
+      it { is_expected.to eq 'http://www.mtrck.net/offer/63430|5272?data1=2494&data2=26092&data3=&p1=p1&p2=p2' }
+    end
+
     context 'link has params' do
       let(:string) { 'http://test.org/test?p3=p3' }
       it { is_expected.to eq 'http://test.org/test?p3=p3&p1=p1&p2=p2' }
