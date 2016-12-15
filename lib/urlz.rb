@@ -91,8 +91,8 @@ private
   end
 
   def current_params
-    url = @url.gsub('{', '%7B').gsub('}', '%7D').gsub('|', '%7C')
-    @current_params ||= Rack::Utils.parse_query(URI(URI.escape(url)).query)
+    url = URI.escape(@url).gsub('{', '%7B').gsub('}', '%7D').gsub('|', '%7C')
+    @current_params ||= Rack::Utils.parse_query(URI(url).query)
   end
 
   def protocol? string
