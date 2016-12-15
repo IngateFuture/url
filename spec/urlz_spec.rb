@@ -44,6 +44,11 @@ describe Urlz do
       let(:string) { 'http://test.org/test?p1=pppp1' }
       it { expect { subject }.to raise_error ArgumentError }
     end
+
+    context 'has russian characters' do
+      let(:string) { 'https://rdr.salesdoubler.com.ua/in/offer/1318?aid=28925&source=МТ' }
+      it { is_expected.to eq 'https://rdr.salesdoubler.com.ua/in/offer/1318?aid=28925&source=МТ&p1=p1&p2=p2' }
+    end
   end
 
   describe '#[]' do

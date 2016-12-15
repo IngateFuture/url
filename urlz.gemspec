@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'byebug'
   gem.add_development_dependency 'pry-byebug'
   gem.add_development_dependency 'pry-stack_explorer'
+  gem.add_development_dependency 'awesome_print'
 
   gem.add_development_dependency 'rb-inotify'
   gem.add_development_dependency 'rb-fsevent'
